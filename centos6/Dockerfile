@@ -6,7 +6,7 @@ MAINTAINER Sherwin Daganato <sherwin@daganato.com>
 RUN yum -y update; yum clean all
 RUN yum -y install epel-release; yum clean all
 RUN yum -y install bzr cvs git mercurial subversion; yum clean all
-RUN yum -y install curl wget; yum clean all
+RUN yum -y install curl wget tar; yum clean all
 RUN yum -y groupinstall 'Development Tools'; yum clean all
 RUN yum -y install ImageMagick \
                    bzip2-devel \
